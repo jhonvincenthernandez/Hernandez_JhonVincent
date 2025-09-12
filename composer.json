@@ -1,0 +1,13 @@
+{
+  "name": "hernandez/crud",
+  "description": "CRUD project",
+  "require": {
+    "php": ">=8.0",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
