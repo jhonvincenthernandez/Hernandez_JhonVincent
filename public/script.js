@@ -1,4 +1,4 @@
-alert("This ia a view file")
+alert("This is a view file")
 
 /* 🌙 Dark Mode Toggle */
 function toggleTheme() {
