@@ -22,10 +22,6 @@
         <input type="submit" value="Create">
     </form>
 </div>
-<script>
-    <script>
-    src="<?=base_url().'public/script.js';?>"
-</script>
-</script>
+    <script src="<?=base_url().'public/script.js';?>"></script>
 </body>
 </html>
