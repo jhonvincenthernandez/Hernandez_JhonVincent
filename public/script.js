@@ -1,4 +1,4 @@
-alert("This is a view file")
+alert("Hello there! 👋 Thanks for visiting HERNANDEZ website 😊.")
 
 /* 🌙 Dark Mode Toggle */
 function toggleTheme() {
