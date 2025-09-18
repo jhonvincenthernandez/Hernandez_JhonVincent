@@ -1,4 +1,3 @@
-alert("👋 Welcome to HERNANDEZ website! Enjoy your stay 😊");
 
 /* 🌙 Dark Mode Toggle */
 function toggleTheme() {
