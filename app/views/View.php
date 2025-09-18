@@ -14,7 +14,6 @@
     </div>
     <h1>User List</h1>
     <a href="https://www.google.com" target="_blank">Google</a>
-
     <a href="<?=site_url('crud/create'); ?>">+ Add User</a>
 
     <!-- 🔍 Search bar -->
