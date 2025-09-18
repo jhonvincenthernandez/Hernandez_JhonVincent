@@ -22,7 +22,6 @@
         <input type="submit" value="Create">
     </form>
 </div>
-    <script src="<?= base_url('public/script.js?v=' . filemtime($_SERVER['DOCUMENT_ROOT'] . '/public/script.js')); ?>"></script>
-
+    <script src="<?=base_url().'public/script.js';?>"></script>
 </body>
 </html>
