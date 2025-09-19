@@ -11,7 +11,7 @@ class CrudController extends Controller {
     {
         parent::__construct();
     }
-    public function index()
+    public function all()
     {
         $page = 1;
         if(isset($_GET['page']) && ! empty($_GET['page'])) {

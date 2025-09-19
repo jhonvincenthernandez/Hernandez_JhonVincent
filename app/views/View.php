@@ -47,7 +47,6 @@
                 <td><?=($row['id']); ?></td>
                 <td><?=($row['name']); ?></td>
                 <td><?=($row['email']); ?></td>
-                <td>
                   <a href="<?=site_url('crud/update/'.$row['id']); ?>" onclick="return confirm('Are you sure you want to update this user?')">Edit</a>
                   <a href="<?=site_url('crud/delete/'.$row['id']); ?>" onclick="return confirm('Are you sure you want to delete this user?')">Delete</a>
                 </td>

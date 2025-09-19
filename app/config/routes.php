@@ -43,7 +43,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
 |
 */
 
-$router->get('/', 'CrudController::index');
+$router->get('/', 'CrudController::all');
 $router->match('/crud/update/{id}', 'CrudController::update',['Get','Post']);
 $router->get('/crud/delete/{id}', 'CrudController::delete');
 $router->match('/crud/create', 'CrudController::create',['Get','Post']);
