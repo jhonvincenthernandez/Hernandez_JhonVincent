@@ -36,7 +36,7 @@ class CrudController extends Controller {
             'page_delimiter' => '&page='
         ]);
         $this->pagination->set_theme('bootstrap'); // or 'tailwind', or 'custom'
-        $this->pagination->initialize($total_rows, $records_per_page, $page, site_url('/View').'?q=');
+        $this->pagination->initialize($total_rows, $records_per_page, $page, site_url('/View').'?q='.$q);
         $data['page'] = $this->pagination->paginate();
         $this->call->view('View', $data);
     }

@@ -79,7 +79,7 @@ $config['ENVIRONMENT']             = 'development';
 | WARNING: You MUST set this value!
 |
 */
-$config['base_url'] 				= 'https://hernandez-jhonvincent-servers.onrender.com/View?q=jv&page=1';
+$config['base_url'] 				= '';
 
 /*
 |--------------------------------------------------------------------------
