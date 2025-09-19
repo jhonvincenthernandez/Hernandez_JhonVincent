@@ -108,3 +108,4 @@ class CrudController extends Controller {
         redirect('/');
     }
 }
+?>
