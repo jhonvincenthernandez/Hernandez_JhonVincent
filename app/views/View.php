@@ -56,7 +56,7 @@
         </tbody>
     </table>
 
- 
+    <!-- 📄 Pagination -->
 </div>
         <!-- External JS -->
         <script src="<?=base_url().'public/script.js';?>"></script>
