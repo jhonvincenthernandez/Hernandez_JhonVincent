@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="<?=base_url().'public/style.css';?>"/>
 </head>
 <body>
+  <div class="container mt-3 ">
+	<form action="<?=site_url('author');?>" method="get" class="col-sm-4 float-end d-flex">
+		<?php
+		$q = '';
+		if(isset($_GET['q'])) {
+			$q = $_GET['q'];
+		}
+		?>
+        <input class="form-control me-2" name="q" type="text" placeholder="Search" value="<?=html_escape($q);?>">
+        <button type="submit" class="btn btn-primary" type="button">Search</button>
+	</form>
 <div class="container">
     <div class="toggle-btn">
         <button onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
