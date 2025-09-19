@@ -42,7 +42,7 @@
           </tr>
         </thead>
         <tbody>
-            <?php foreach (html_escape($data) as $row): ?>
+            <?php foreach (html_escape($all) as $row): ?>
               <tr>
                 <td><?=($row['id']); ?></td>
                 <td><?=($row['name']); ?></td>
