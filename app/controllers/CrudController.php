@@ -28,16 +28,16 @@ class CrudController extends Controller {
         $all = $this->UserModel->page($q, $records_per_page, $page);
         $data['all'] = $all['records'];
         $total_rows = $all['total_rows'];
-        $this->UserModel->set_options([
+        $this->pagination->set_options([
             'first_link'     => '⏮ First',
             'last_link'      => 'Last ⏭',
             'next_link'      => 'Next →',
             'prev_link'      => '← Prev',
             'page_delimiter' => '&page='
         ]);
-        $this->UserModel->set_theme('bootstrap'); // or 'tailwind', or 'custom'
-        $this->UserModel->initialize($total_rows, $records_per_page, $page, site_url('View').'?q='.$q);
-        $data['page'] = $this->UserModel->paginate();
+        $this->pagination->set_theme('bootstrap'); // or 'tailwind', or 'custom'
+        $this->pagination->initialize($total_rows, $records_per_page, $page, site_url('View').'?q='.$q);
+        $data['page'] = $this->pagination->paginate();
         $this->call->view('View', $data);
     }
 
