@@ -54,12 +54,12 @@
                     <?php endforeach; ?>
                 </tbody>
             </table>
-
-            <!-- 📄 Pagination -->
+                <?php
+                echo $page;
+                ?>
         </div>
     </div>
 
-        <!-- External JS -->
         <script src="<?=base_url().'public/script.js';?>"></script>
 </body>
 </html>
