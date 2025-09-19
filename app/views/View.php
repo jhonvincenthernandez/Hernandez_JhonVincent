@@ -44,7 +44,6 @@
         <tbody>
             <?php foreach (html_escape($data) as $row): ?>
               <tr>
-                <td><?=($row['id']); ?></td>
                 <td><?=($row['name']); ?></td>
                 <td><?=($row['email']); ?></td>
                 <td>
