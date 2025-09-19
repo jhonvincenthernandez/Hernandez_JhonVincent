@@ -24,9 +24,9 @@ class UserModel extends Model {
                 
                 // Build LIKE conditions
                 $query->like('id', '%'.$q.'%')
-                    ->or_like('user_id', '%'.$q.'%')
-                    ->or_like('age', '%'.$q.'%')
-                    ->or_like('address', '%'.$q.'%');
+                    ->or_like('name', '%'.$q.'%')
+                    ->or_like('email', '%'.$q.'%')
+                    ->or_like('password', '%'.$q.'%');
 
                 // Clone before pagination
                 $countQuery = clone $query;
